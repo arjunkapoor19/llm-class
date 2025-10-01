@@ -12,3 +12,15 @@ Tweak: Enhanced the tracing setup by assigning meaningful names and attaching co
 Learned: Understood how to properly categorize traces using the run_type parameter (such as llm and retriever) to unlock specialized visualizations in LangSmith, along with implementing reduce_fn to handle streamed outputs effectively.
 
 Tweak: Filled in all missing run_type and reduce_fn configurations, updated the LLM prompt to a coffee-order scenario, and tailored the retriever’s document content and metadata to make the example distinct and customized.
+
+### Lesson 3
+
+Learned: Gained insight into using the with trace() context manager to explicitly manage trace inputs and outputs, and learned that LangChain-compatible providers can enable automatic tracing for all LLM calls through environment variable configuration.
+
+Tweak: Replaced the decorator on generate_response with a custom with trace() block, attaching a distinctive manual-context-manager tag to demonstrate fine-grained, manual trace control.
+
+### Lesson 4
+
+Learned: Discovered that multi-turn conversations are linked by supplying a stable, unique identifier (such as session_id, thread_id, or conversation_id) through the langsmith_extra metadata across related runs.
+
+Tweak: Added conversation tracking by generating a uuid.uuid4() in Python and reusing it as the conversation_id within the langsmith_extra field for both chat turns.
