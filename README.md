@@ -24,3 +24,11 @@ Tweak: Replaced the decorator on generate_response with a custom with trace() bl
 Learned: Discovered that multi-turn conversations are linked by supplying a stable, unique identifier (such as session_id, thread_id, or conversation_id) through the langsmith_extra metadata across related runs.
 
 Tweak: Added conversation tracking by generating a uuid.uuid4() in Python and reusing it as the conversation_id within the langsmith_extra field for both chat turns.
+
+## Module 2
+
+### Lesson 1
+
+Learned: Learned to manage LangSmith datasets programmatically with the langsmith.Client to support a test-driven workflow, including creating datasets via client.create_dataset() and bulk uploading input–reference pairs using client.create_examples().
+
+Tweak: Switched from relying on a pre-existing dataset ID to dynamically creating a new dataset through client.create_dataset(), generating a unique name with uuid.uuid4(). This allowed the full dataset setup and example ingestion to run end-to-end directly within the notebook.
