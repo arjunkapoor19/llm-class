@@ -32,3 +32,9 @@ Tweak: Added conversation tracking by generating a uuid.uuid4() in Python and re
 Learned: Learned to manage LangSmith datasets programmatically with the langsmith.Client to support a test-driven workflow, including creating datasets via client.create_dataset() and bulk uploading input–reference pairs using client.create_examples().
 
 Tweak: Switched from relying on a pre-existing dataset ID to dynamically creating a new dataset through client.create_dataset(), generating a unique name with uuid.uuid4(). This allowed the full dataset setup and example ingestion to run end-to-end directly within the notebook.
+
+### Lesson 2
+
+Learned: Understood that LangSmith evaluators are callable functions that accept a Run and an Example and produce a Feedback object. Implemented an LLM-as-Judge evaluation by encoding evaluation criteria in a prompt and enforcing structured, schema-driven outputs using Pydantic.
+
+Tweak: Migrated from the OpenAI-specific structured output approach (client.beta.chat.completions.parse) to a Groq-compatible solution by using ChatGroq.with_structured_output, preserving the LLM-as-Judge evaluation pattern while meeting Groq’s model constraints.
