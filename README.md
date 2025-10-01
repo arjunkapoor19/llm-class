@@ -38,3 +38,13 @@ Tweak: Switched from relying on a pre-existing dataset ID to dynamically creatin
 Learned: Understood that LangSmith evaluators are callable functions that accept a Run and an Example and produce a Feedback object. Implemented an LLM-as-Judge evaluation by encoding evaluation criteria in a prompt and enforcing structured, schema-driven outputs using Pydantic.
 
 Tweak: Migrated from the OpenAI-specific structured output approach (client.beta.chat.completions.parse) to a Groq-compatible solution by using ChatGroq.with_structured_output, preserving the LLM-as-Judge evaluation pattern while meeting Groq’s model constraints.
+
+### Lesson 3
+
+Learned: Learned to apply langsmith.evaluate to methodically benchmark multiple application variants against a shared dataset. Conducted comparative experiments between two Groq models (Llama and Mixtral) and gained clarity on how settings such as experiment_prefix, metadata, num_repetitions, and max_concurrency shape the evaluation workflow.
+
+Tweak:
+
+1. Resilient Dataset Selection: Added logic to reliably identify the most recently created dataset by querying client.list_datasets(), improving experiment stability.
+
+2. Custom Constraint Evaluator: Introduced a bespoke evaluator, is_three_sentences, to enforce the RAG prompt’s “maximum three sentences” constraint, strengthening quality control within the evaluation pipeline.
