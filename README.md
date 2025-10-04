@@ -48,3 +48,7 @@ Tweak:
 1. Resilient Dataset Selection: Added logic to reliably identify the most recently created dataset by querying client.list_datasets(), improving experiment stability.
 
 2. Custom Constraint Evaluator: Introduced a bespoke evaluator, is_three_sentences, to enforce the RAG prompt’s “maximum three sentences” constraint, strengthening quality control within the evaluation pipeline.
+
+### Lesson 4
+
+In this video, I learned how to read and interpret experiment results using LangSmith’s dashboards and analytics. The platform visualizes model performance over time, which helps identify trends, improvements, and areas of weakness. A side-by-side comparison of ChatGPT-4o and GPT-3.5 Turbo showed that 4o produced more accurate and concise responses, albeit with slightly higher latency. This analysis underscored the value of structured experimentation, as it surfaces measurable performance differences rather than just raw outputs, reinforcing the role of systematic evaluation when selecting or refining models for real-world use cases.
