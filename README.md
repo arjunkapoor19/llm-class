@@ -52,3 +52,8 @@ Tweak:
 ### Lesson 4
 
 In this video, I learned how to read and interpret experiment results using LangSmith’s dashboards and analytics. The platform visualizes model performance over time, which helps identify trends, improvements, and areas of weakness. A side-by-side comparison of ChatGPT-4o and GPT-3.5 Turbo showed that 4o produced more accurate and concise responses, albeit with slightly higher latency. This analysis underscored the value of structured experimentation, as it surfaces measurable performance differences rather than just raw outputs, reinforcing the role of systematic evaluation when selecting or refining models for real-world use cases.
+
+### Lesson 5 
+
+- Learned: Learned how to use Langsmith's `client.evaluate()` function to run multiple models against a dataset and use custom Pydantic schemas for automated LLM-as-a-Judge scoring, which is necessary for quantitative evaluation.
+ - Tweak: Converted all API calls to use Groq and changed the experiment context from generic "Meeting Transcripts" to specific.
