@@ -65,3 +65,15 @@ Learned: Learned how to use Langsmith's `client.evaluate()` function to run mult
  Learned: Learned to use the LangSmith Playground to methodically evaluate and compare language models by running experiments over a dataset, testing alternative prompt formulations, and reviewing side-by-side model outputs to assess performance on identical inputs.
 
 Tweak: Customized the dataset by adding new question–answer pairs, then iterated in the LangSmith Playground by adjusting system and user prompts and swapping between different GPT models to observe how these changes influenced the generated responses.
+
+### Lesson 2
+
+Learned: Learned to use the client.push_prompt() method to programmatically version and manage custom ChatPromptTemplate objects, enabling prompt and persona iteration outside the LangSmith UI. This approach is key for maintaining structured control over prompt evolution.
+
+Tweak: Replaced the original Pirate Friend persona and interaction flow with a custom Advanced 2500 AI persona for execution.
+
+### Lesson 3
+
+Learned: Explored the full prompt engineering lifecycle by building a complete end-to-end example, leveraging both the Playground and Prompt Hub. Applied the prompt to a dataset and embedded a small Python code snippet directly within the prompt as part of the experiment.
+
+Tweak: While keeping the core program largely unchanged, tested the prompt against a wide range of technical questions to observe and evaluate its behavior across different inputs.
