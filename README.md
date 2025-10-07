@@ -55,5 +55,13 @@ In this video, I learned how to read and interpret experiment results using Lang
 
 ### Lesson 5 
 
-- Learned: Learned how to use Langsmith's `client.evaluate()` function to run multiple models against a dataset and use custom Pydantic schemas for automated LLM-as-a-Judge scoring, which is necessary for quantitative evaluation.
- - Tweak: Converted all API calls to use Groq and changed the experiment context from generic "Meeting Transcripts" to specific.
+Learned: Learned how to use Langsmith's `client.evaluate()` function to run multiple models against a dataset and use custom Pydantic schemas for automated LLM-as-a-Judge scoring, which is necessary for quantitative evaluation.
+ Tweak: Converted all API calls to use Groq and changed the experiment context from generic "Meeting Transcripts" to specific.
+
+## Module 3
+
+ ### Lesson 1
+
+ Learned: Learned to use the LangSmith Playground to methodically evaluate and compare language models by running experiments over a dataset, testing alternative prompt formulations, and reviewing side-by-side model outputs to assess performance on identical inputs.
+
+Tweak: Customized the dataset by adding new question–answer pairs, then iterated in the LangSmith Playground by adjusting system and user prompts and swapping between different GPT models to observe how these changes influenced the generated responses.
