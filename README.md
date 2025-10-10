@@ -77,3 +77,7 @@ Tweak: Replaced the original Pirate Friend persona and interaction flow with a c
 Learned: Explored the full prompt engineering lifecycle by building a complete end-to-end example, leveraging both the Playground and Prompt Hub. Applied the prompt to a dataset and embedded a small Python code snippet directly within the prompt as part of the experiment.
 
 Tweak: While keeping the core program largely unchanged, tested the prompt against a wide range of technical questions to observe and evaluate its behavior across different inputs.
+
+### Lesson 4
+
+I learned how to effectively use the Prompt Canvas, a powerful tool that enables LLMs to generate highly customized prompts tailored to specific needs. I applied this understanding by refining the two systems I created in the Prompt Hub and experimenting with custom actions.
